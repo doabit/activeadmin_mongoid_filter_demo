@@ -1,3 +1,6 @@
 ActiveAdmin.register Post do
-  filter :title
+  scope 'Recommend' do |posts|
+    posts.recommend
+  end
+
 end
